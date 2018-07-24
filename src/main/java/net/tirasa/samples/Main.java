@@ -28,14 +28,15 @@ import javax.naming.ldap.InitialLdapContext;
 
 public class Main {
 
-    private static final String ENDPOINT = "ldaps://11.10.10.4:636";
+    private static final String ENDPOINT = "ldaps://testad2012.test.tirasa.net:636";
 
     private static final String BASE_CONTEXT = "dc=test,dc=tirasa,dc=net";
 
-    private static final String PRINCIPAL = "Administrator@test.tirasa.net";
+    private static final String PRINCIPAL = "XXXXXXX";
 
-    private static final String CREDENTIALS = "Password1";
+    private static final String CREDENTIALS = "XXXXXXXX";
 
+    @SuppressWarnings("unchecked")
     public static void main(final String[] args) {
         @SuppressWarnings({ "UseOfObsoleteCollectionType", "rawtypes" })
         final java.util.Hashtable env = new java.util.Hashtable();
